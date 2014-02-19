@@ -42,15 +42,17 @@
       margin: 2em;
     }
 
-    .liker > span {
+    .liker > button {
       display: inline-block;
       padding: .5em;
       cursor: pointer;
       transition: all .3s;
       border-radius: 10px;
+      border: none;
+      background: none;
     }
 
-    .liker > span.selected {
+    .liker > button.selected {
       background-color: #fbb03b;
       color: #ffffff;
     }
@@ -62,26 +64,15 @@
 
 
 <span id="test1">
-  <div class="liker" data-value="1">
+  <div class="liker">
 	  
 
   </div>
-<!--
-  <div class="liker" data-value="0"></div>
-
-  <div class="liker" data-value="-1"></div>
-
-  <div class="liker"></div>
-  -->
 </span>
-<!--
-<span id="test2">
-  <div class="liker"></div>
-</span>
--->
+
 <script type="text/javascript" src="likers.js"></script>
 <script type="text/javascript">
-addLikers( document.getElementById("test1") );
+	addLikers( document.getElementById("test1") );
 </script>
 
   </body>
